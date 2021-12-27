@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/layout/clients.scss"
+    ],
+    "names": [],
+    "file": "clients.css"
+}

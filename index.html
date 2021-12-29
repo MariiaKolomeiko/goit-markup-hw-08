@@ -15,10 +15,16 @@
     <link href="./css/main.min.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="header-container container">
 <nav class="header-navigate">
     <a class="logo link" lang="en" href="/">Web<span class="logo-dark">Studio</span></a>
+    <button class="mob-menu-btn" aria-label="Переключатель мобильного меню" type="button">
+        <svg width="40" height="40">
+            <use href="images/social-svg.svg#menu"></use>
+        </svg>
+    </button>
+   
     <ul class="navigate-list list">
         <li class="navigate-list__item"><a class="link header-link navigate-list__link current" href="">Студия</a> </li>
         <li class="navigate-list__item"><a class="link header-link navigate-list__link" href="./portfolio.html">Портфолио</a></li>
@@ -40,14 +46,48 @@
             +38 096 111 11 11</a></li>
     </ul>
     </div>
-    </header> -->
+    <div class="mob-menu is-hidden">
+        <button class="mob-close-btn" type="button">
+            <svg class="mob-menu__icon" width="40" height="40">
+                <use href="images/social-svg.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="mob-menu__nav">
+            <ul class="nav-list list">
+                <li class="nav-list__item"><a class="link nav-list__link" href="">Студия</a> </li>
+                <li class="nav-list__item"><a class="link nav-list__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav-list__item"><a class="link nav-list__link" href="">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="mob-contacts">
+            <ul class="mob-contacts-list list">
+                <li class="mob-contacts-list__item">
+                    <a class="mob-contacts-list__link mob-tel-link link" href="telto:+380961111111">
+                        +38 096 111 11 11</a>
+                </li>
+                <li class="mob-contacts-list__item">
+                    <a class="mob-contacts-list__link mob-mail-link link" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+    
+            <div class="mob-social">
+                <ul class="mob-social__list list">
+                    <li class="mob-social__item"> <a class="mob-social__link link" href="">Instagram</a> </li>
+                    <li class="mob-social__item"> <a class="mob-social__link link" href="">Twitter</a> </li>
+                    <li class="mob-social__item"> <a class="mob-social__link link" href="">Facebook</a> </li>
+                    <li class="mob-social__item"> <a class="mob-social__link link" href="">LinkedIn</a> </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <main>
-<!-- <section class="hero section">
+<section class="hero section">
     <div class="hero__container container">
     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
     <button type="button" class="hero__button button" data-modal-open >Заказать услугу</button>
     </div>
-</section> -->
+</section>
 <section class="rules-section section">
     <div class="rules__container container">
         <h2 hidden>Наши принципы</h2>
@@ -313,8 +353,9 @@
     </div>
 </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer__container container">
+            <div class="footer-top">
             <div class="footer__main">
         <a class="logo link" lang="en" href="/">Web<span class="logo-light">Studio</span></a>
         <address>
@@ -366,6 +407,7 @@
                 </li>
             </ul>
             </div>
+            </div>
             <div class="footer-form">
                 <h3 class="footer-form__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
                 <form class="footer-form__online" action="#">
@@ -384,7 +426,7 @@
 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close-btn" data-modal-close>
@@ -455,6 +497,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

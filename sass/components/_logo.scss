@@ -4,9 +4,12 @@
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-align: left;
   color: var(--accent-color);
-  margin-right: 93px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 93px;
+  }
 }
 
 .logo-dark {
@@ -15,4 +18,8 @@
 
 .logo-light {
   color: var(--main-white-color);
+}
+
+.logo.link {
+  margin-right: 80px;
 }

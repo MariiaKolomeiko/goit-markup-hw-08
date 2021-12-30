@@ -136,15 +136,21 @@
     <div class="work__container container">
     <h2 class="work__title title">Чем мы занимаемся</h2>
     <ul class="work-list list"> 
-        <li class="work-list__item"> <img src="./images/section-img1.jpg" alt="человек пишет код" width="370" height="294">
+        <li class="work-list__item"> 
+            <img srcset="/images/section-img1-dt-x1.jpg 1x,
+                        /images/section-img1-dt-x2.jpg 2x" src="/images/section-img1-dt-x1" width="370" height="294" alt="компьютер">
             <h3 class="work-list__label">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
         </li> 
         <li class="work-list__item"> 
-            <img src="./images/section-img2.jpg" alt="человек смотрит в телефон" width="370" height="294">
+            <img srcset="/images/section-img2-dt-x1.jpg 1x,
+                        /images/section-img2-dt-x2.jpg 2x" src="/images/section-img2-dt-x1"
+                        alt="человек смотрит в телефон" width="370" height="294">
             <h3 class="work-list__label">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
         </li>
         <li class="work-list__item">
-            <img src="./images/section-img3.jpg" alt="палитра на планшете" width="370" height="294">
+            <img srcset="/images/section-img3-dt-x1.jpg 1x,
+                        /images/section-img3-dt-x2.jpg 2x" src="/images/section-img3-dt-x1" 
+                        alt="палитра на планшете" width="370" height="294">
             <h3 class="work-list__label">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
         </li>
     </ul>
@@ -155,7 +161,17 @@
     <h2 class="title">Наша команда</h2>
     <ul class="team-list list">
         <li class="team-list__card">
-        <img src="./images/section-team-img1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+        <picture>
+            <source srcset="/images/team-img1-dt-x1.jpg x1,
+                            /images/team-img1-dt-x2.jpg x2" media="(min-width:1200px)">
+            <source srcset="/images/team-img1-tab-x1.jpg x1,
+                            /images/team-img1-tab-x2.jpg x2" media="(min-width:768px)">
+            <source srcset="/images/team-img1-mob-x1.jpg x1,
+                            /images/team-img1-mob-x2.jpg x2" media="(min-width:480px)">
+        </picture>
+           x <img srcset="/images/team-img1-dt-x1.jpg xx1
+                    /images/team-img1-dt-x2.jpg x2" 
+                    src="/images/team-img1-dt-x1.jpg" width="270" height="260" alt="Игорь Демьяненко">
             <div class="team-list__textblock">
             <h3 class="team-list__title">Игорь Демьяненко</h3>
             <p lang="en"  class="team-list__text">Product Designer</p>
@@ -191,7 +207,17 @@
             </div>
         </li>
         <li class="team-list__card">
-        <img  src="./images/section-team-img2.jpg" alt="Ольга Репина" width="270" height="260">
+    <picture>
+        <source srcset="/images/team-img2-dt-x1.jpg x1,
+                        /images/team-img2-dt-x2.jpg x2" media="(min-width:1200px)">
+        <source srcset="/images/team-img2-tab-x1.jpg x1,
+                        /images/team-img2-tab-x2.jpg x2" media="(min-width:768px)">
+        <source srcset="/images/team-img2-mob-x1.jpg x1,
+                        /images/team-img2-mob-x2.jpg x2" media="(min-width:480px)">
+    </picture>
+    <img srcset="/images/team-img2-dt-x1.jpg x1,
+                        /images/team-img2-dt-x2.jpg x2" 
+                        src="/images/team-img2-dt-x1.jpg" width="270" height="260" alt="Ольга Репина">
             <div class="team-list__textblock">
             <h3 class="team-list__title">Ольга Репина</h3>
             <p lang="en" class="team-list__text">Frontend Developer</p>
@@ -228,7 +254,17 @@
             </div>
         </li>
         <li class="team-list__card">
-        <img  src="./images/section-team-img3.jpg" alt="Николай Тарасов" width="270" height="260">
+        <picture>
+            <source srcset="/images/team-img3-dt-x1.jpg x1,
+                            /images/team-img3-dt-x2.jpg x2" media="(min-width:1200px)">
+            <source srcset="/images/team-img3-tab-x1.jpg x1,
+                            /images/team-img3-tab-x2.jpg x2" media="(min-width:768px)">
+            <source srcset="/images/team-img3-mob-x1.jpg x1,
+                            /images/team-img3-mob-x2.jpg x2" media="(min-width:480px)">
+        </picture>
+            <img srcset="/images/team-img3-dt-x1.jpg x1,
+                        /images/team-img3-dt-x2.jpg x2" 
+                    src="/images/team-img3-dt-x1.jpg"  width="270" height="260" alt="Николай Тарасов">
             <div class="team-list__textblock">
             <h3 class="team-list__title">Николай Тарасов</h3>
             <p lang="en" class="team-list__text">Marketing</p>
@@ -265,12 +301,22 @@
                 </div>
         </li>
         <li class="team-list__card">
-        <img  src="./images/section-team-img4.jpg" alt="Михаил Ермаков" width="270" height="260">
+        <picture>
+            <source srcset="/images/team-img4-dt-x1.jpg x1,
+                            /images/team-img4-dt-x2.jpg x2" media="(min-width:1200px)">
+            <source srcset="/images/team-img4-tab-x1.jpg x1,
+                            /images/team-img4-tab-x2.jpg x2" media="(min-width:768px)">
+            <source srcset="/images/team-img4-mob-x1.jpg x1,
+                        /images/team-img4-mob-x2.jpg x2" media="(min-width:480px)">
+        </picture>
+        <img srcset="/images/team-img4-dt-x1.jpg x1,
+                    /images/team-img4-dt-x2.jpg x2" 
+                src="/images/team-img4-dt-x1.jpg" width="270" height="260" alt="Михаил Ермаков">
             <div class="team-list__textblock">
             <h3 class="team-list__title">Михаил Ермаков</h3>
             <p lang="en" class="team-list__text">UI Designer</p>
                 <ul class="team__social-list social-list list">
-                    <li class="social-list__item">
+                    <li class="social-list__item" >
                         <a href="" class="social-list__link">
                             <svg class="social-list__icon" width="20" height="20">
                                 <use href="./images/social-svg.svg#icon-instagram"></use>

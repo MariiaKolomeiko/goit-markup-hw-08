@@ -1234,13 +1234,13 @@ a[href="https://goo.gl/maps/4tGbcDuvCBDR5g7U7"] {
 
 .gallery-card {
   margin-top: 30px;
-  margin-left: 30px;
+  margin-bottom: 30px;
   width: 450px;
-  height: 404px;
 }
 
 @media screen and (min-width: 768px) {
   .gallery-card {
+    margin-left: 30px;
     width: calc(100% / 2 - 30px);
     height: 440px;
   }

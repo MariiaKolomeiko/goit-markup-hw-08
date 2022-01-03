@@ -3,7 +3,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: start;
-  // margin-bottom: 50px;
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -48,35 +47,29 @@
 }
 
 .gallery-list {
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // margin-left: -30px;
-  // margin-top: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .gallery-card {
-  margin-left: 30px;
   margin-top: 30px;
+  margin-left: 30px;
   width: 450px;
   height: 404px;
   @media screen and (min-width: 768px) {
-    width: 354px;
+    width: calc(100% / 2 - 30px);
+    height: 440px;
   }
   @media screen and (min-width: 1200px) {
     width: 370px;
+    height: 404px;
   }
 }
 

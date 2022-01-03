@@ -17,13 +17,13 @@
 
 .mob-menu-btn {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 20px;
   margin-left: auto;
   border: none;
   background-color: inherit;
   padding: 0;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }

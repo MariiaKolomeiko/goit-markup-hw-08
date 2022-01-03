@@ -13,8 +13,8 @@
 }
 
 .modal {
-  max-height: 580px;
-  width: 530px;
+  max-height: 609px;
+  width: 450px;
   background-color: var(--main-white-color);
   border-radius: 4px;
   position: absolute;
@@ -25,6 +25,10 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition: transform 450ms;
   padding: 40px;
+  @media screen and (min-width: 1200px) {
+    max-height: 581px;
+    width: 528px;
+  }
 }
 
 .modal__close-btn {
@@ -151,17 +155,31 @@
 }
 
 .modal-form__policy-link {
+  display: block;
+  width: 30%;
   color: var(--accent-color);
+  font-size: 12px;
+  line-height: 1.16;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__check-text {
+  position: relative;
   display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  vertical-align: Top;
+  align-items: baseline;
+  text-align: left;
+  margin: 0 auto;
   letter-spacing: 0.03em;
+  color: #757575;
+  font-size: 12px;
+  line-height: 1.16;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__check-item {

@@ -97,9 +97,6 @@ img {
 }
 
 .mob-menu-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   margin-left: auto;
   border: none;
   background-color: inherit;
@@ -552,12 +549,25 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 .header-container {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  max-height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    max-height: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header-link,
@@ -597,7 +607,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .header-link.current::after {
-    bottom: -32px;
+    bottom: -37px;
   }
 }
 
@@ -660,7 +670,12 @@ img {
 .contacts-list__item {
   display: block;
   min-width: 161px;
-  min-height: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list__item {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1012,6 +1027,12 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 0;
+  }
+}
+
 .footer__container {
   text-align: center;
 }
@@ -1165,14 +1186,14 @@ a[href="https://goo.gl/maps/4tGbcDuvCBDR5g7U7"] {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: start;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 768px) {
   .filter-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1221,35 +1242,25 @@ a[href="https://goo.gl/maps/4tGbcDuvCBDR5g7U7"] {
   .gallery-list {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .gallery-list {
-    flex-wrap: wrap;
     margin-left: -30px;
-    margin-top: -30px;
+    margin-bottom: -30px;
   }
 }
 
 .gallery-card {
-  margin-top: 30px;
   margin-bottom: 30px;
-  width: 450px;
 }
 
 @media screen and (min-width: 768px) {
   .gallery-card {
     margin-left: 30px;
     width: calc(100% / 2 - 30px);
-    height: 440px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery-card {
-    width: 370px;
-    height: 404px;
+    width: calc(100% / 3 - 30px);
   }
 }
 
@@ -1302,7 +1313,7 @@ a[href="https://goo.gl/maps/4tGbcDuvCBDR5g7U7"] {
   vertical-align: Top;
   letter-spacing: 0.03em;
   color: var(--main-white-color);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition-duration: 400ms;
   transition-timing-function: linear;
 }
